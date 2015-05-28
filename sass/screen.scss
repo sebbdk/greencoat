@@ -1,0 +1,116 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/7YGmE4Ls5b94ct65u07hVQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #999;
+	font-family: 'Courier';
+//	background-image: url(../img/logo.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	box-shadow: inset 0 0 300px rgba(0,0,0,0.2);
+}
+
+.scene {
+	max-width: 1024px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+	background-color: #444;
+
+	box-shadow: 0 -20px 30px 0px rgba(0,0,0,0.4);
+
+	img {
+		width: 100%;
+	}
+}
+
+.music-toggle {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	color: #999;
+}
+
+.info-area {
+  //padding: 32px;
+  
+  p {
+  	padding: 20px;
+  	margin: 0;
+  	color: #BBB;
+	color: lime; 
+	font-family: "Courier";
+	font-size: 20px;
+	overflow: hidden;
+  	animation: type 2s steps(60, end); 
+  }
+
+  a {
+  	padding: 10px 20px;
+  	background-color: rgba(0,0,0, 0.3);
+  	color: #3d7c47;
+  	font-size: 20px;
+
+  	&:nth-child(even) {
+		background-color: rgba(0,0,0, 0.1);  		
+  	}
+  }
+  
+}
+
+p, a {
+	font-size: 28px;
+}
+
+h1 {
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	font-size: 48px;
+	color: #d1ebc7;
+	text-align: center;
+	background-color: #333;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 10px; 
+	line-height: 36px;
+	//text-transform: uppercase;
+}
+
+a {
+	display: block;
+	line-height: 44px;
+	color: #ddd;
+	text-decoration: none;
+}
+
+.le-btn {
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	z-index: 2;
+}

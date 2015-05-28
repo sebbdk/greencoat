@@ -1,0 +1,84 @@
+{
+	game:[
+		{
+			text:"You are standing in a jar",
+			actions:[
+				{
+					text:"Wait around, this seems like a nice jar.",
+					goto:1
+				},
+				{
+					text:"Smash your head into the glass like a lunatic.",
+					goto:1
+				},
+				{
+					text:"Dance like pretty pony.",
+					goto:1
+				}
+			]
+		},
+		{
+			text:"As you leave the jar, your fellow scientist outside shrieks, <br />in what what yu assume is joy, over the fact that you finally made it out.",
+			actions:[
+				{
+					text:"Talk science' to your collegue and show how him the schience of the jar",
+					goto:2
+				},
+				{
+					text:"Give you collegue a hug, it's a been a while since you saw, and it's casual friday!",
+					goto:2
+				}
+			]
+		},
+		{
+			text:"A loud ringing noise spread throughout the room, your ears start to leak a bit.",
+			actions:[
+				{
+					text:"Investigate the source of these shinanigans!",
+					goto:3
+				},
+				{
+					text:"Leave the room, you are leaking head-fluid all over the floor, and that is how you get ants!",
+					goto:5
+				}
+			]
+		},
+
+		{
+			text:"You find a curius looking bell-thing",
+			actions:[
+				{
+					text:"Smash it",
+					goto:4
+				},
+				{
+					text:"Smash it",
+					goto:4
+				}
+			]
+		},
+		{
+			text:"You pummel the brass bell looking thing, with your fists, which shatters into a thousand pieces",
+			actions:[
+				{
+					text:"Leave the room and look for donuts, the requirement for any good science!",
+					goto:0
+				}
+			]
+		},
+		{
+			text:"The smell of donuts fills the hallway",
+			actions:[
+				{
+					text:"take a deep breath",
+					goto:0
+				},
+				{
+					text:"continue down the hallway, science waits for no'one!",
+					goto:0
+				}
+			]
+		}
+
+	]
+}
